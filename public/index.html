@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<title>MedicRack</title>
+		<link rel="stylesheet" type="text/css" href="css/app.css"/>
+        <link rel="stylesheet" type="text/css" href="css/ng-grid.css" />
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+        <script type="text/javascript" src="lib/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="lib/angular.js"></script>
+		<script type="text/javascript" src="lib/ui-bootstrap-tpls-0.11.0.min.js"></script>
+		<script type="text/javascript" src="lib/angular-route.js"></script>
+        <script type="text/javascript" src="lib/ng-grid.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+		<script type="text/javascript" src="js/controllers.js"></script>
+		<script type="text/javascript" src="js/services.js"></script>
+	</head>
+	<body ng-app="medicRackApp">
+		<div id="container" ng-controller="menuController">
+			<div id="header">
+				<h1>MedicRack</h1>
+			</div>
+			<div id="menu">
+                <table>
+                    <tbody>
+                    <tr ng-repeat="menuItem in menu">
+                        <td>
+                            <a href="#{{menuItem.url}}">
+                                {{menuItem.desc}}
+                            </a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+
+            </div>
+			<div id="content">
+                <ng-view></ng-view>
+			</div>
+			<div id="advertisement">
+				Ad goes here
+			</div>
+			<div id="footer">
+				footer
+			</div>
+		</div>	
+	</body>
+</html>

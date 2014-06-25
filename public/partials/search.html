@@ -1,0 +1,9 @@
+<div id="statusMsg"><alert ng-repeat="alert in alerts" type="{{alert.type}}" close="closeAlert($index)">{{alert.content}}</alert></div>
+<div>
+	<input autofocus type="search" ng-model="name" ng-keyup="onSearchClick()" placeholder="Please enter medicine name..."/>
+</div><br>
+<div class="gridStyle" ng-grid="gridOptions" ng-show="isFound"></div>
+<div align="center" ng-show="isFound">
+	<button ng-click="onUpdateClick()">Update</button><button click-link="/createBill">Create Bill</button>
+</div>
+

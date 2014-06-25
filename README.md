@@ -1,4 +1,4 @@
 medic-rack
 ==========
+Light weight medicine inventory
 
-Search and update your medicine inventory real quick!!

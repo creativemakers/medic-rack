@@ -1,0 +1,202 @@
+/* app css stylesheet */
+#header {
+	background-color : #E4E3E9;
+	height : 5%;
+	width : 100%;
+}
+
+#header h1 {
+	color : #003366;
+    font-weight : bold;
+    font-family : 'Ultra', sans-serif;  
+    font-size : 40px;
+    line-height : 40px;
+    text-shadow : 0 2px #E6EBF0, 0 3px #E6EBF0;
+	margin-left : 40px;
+    text-align: center;
+}
+
+#menu {
+	background-color : #E6EBF0;
+	height : 90%;
+	width : 15%;
+	float : left;
+}
+
+.active-false {
+	display : block;
+	height : 40px;
+	font-weight : bold;
+	font-size : 25px;
+	background : #194775;
+	color: #FFFFFF;
+	text-align : center;
+	text-decoration : none;
+	margin : 10px 10px 0px 10px;
+	border-radius : 6px;
+	uorder : 1px solid #E6EBF0;
+}
+
+.active-true {
+	display : block;
+	height : 40px;
+	font-weight : bold;
+	font-size : 25px;
+	background : #CCD6E0;
+	color : #003366;
+	text-align : center;
+	text-decoration : none;
+	margin : 10px 10px 0px 10px;
+	border-radius : 6px;
+	border : 1px solid #E6EBF0;
+}
+
+#content {
+	background-color : #FFFFFF;
+	height : 90%;
+	width : 70%;
+	float : left;
+	overflow-y : scroll;
+}
+
+#content h1 {
+	font-size : 30px;
+	color : #194775;
+	font-weight : bold;
+	margin-left : 300px;
+}
+
+::-webkit-input-placeholder  { 
+    color: rgb(190, 188, 188); 
+    font-style: italic;
+	font-size : 17px;
+}
+
+#content fieldset {
+	width : 60%;
+}
+
+#content input {
+ 		outline: none;
+}
+
+#content legend {
+	color: #003366; 
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+}
+
+#content select,
+#content input:not([type="submit"]):not([type="button"]) {
+    width: 94%;
+	font-size : 17px;
+	font-weight : bold;
+    border: 1px solid rgb(178, 178, 178);
+    box-sizing : content-box;
+    border-radius: 3px;
+    box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+    transition: all 0.2s linear;
+}
+
+#content input[type="submit"] {
+    width: 10%;
+    cursor: pointer;    
+    background: #194775;
+    padding: 8px 5px;
+    font-family: 'BebasNeueRegular','Arial Narrow',Arial,sans-serif;
+    color: #fff;
+    font-size: 24px;    
+    border: 1px solid rgb(28, 108, 122);    
+    margin-bottom: 10px;    
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 3px; 
+    box-shadow:
+        0px 1px 6px 4px rgba(0, 0, 0, 0.07) inset,
+        0px 0px 0px 3px rgb(254, 254, 254),
+        0px 5px 3px 3px rgb(210, 210, 210);
+    transition: all 0.2s linear;
+}
+
+#content input[type="submit"]:hover {
+    background: #335C85;
+}
+
+#content input[type="submit"]:active,
+#content input[type="submit"]:focus {
+    background: #335C85;
+    position: relative;
+    top: 1px;
+    border: 1px solid rgb(12, 76, 87);  
+    box-shadow: 0px 1px 6px 4px rgba(0, 0, 0, 0.2) inset;
+}
+
+#content input[type="submit"]:disabled {
+	background : #6685A3;
+	cursor : default;
+	box-shadow : none;
+	position : initial;
+}
+
+#content p.change_link a {
+    display: inline-block;
+    font-weight: bold;
+    background: rgb(247, 248, 241);
+    padding: 2px 6px;
+    color: rgb(29, 162, 193);
+    margin-left: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+    border: 1px solid rgb(203, 213, 214);
+    transition: all 0.4s  linear;
+}
+
+#content p.change_link a:hover {
+    color: rgb(57, 191, 215);
+    background: rgb(247, 247, 247);
+    border: 1px solid rgb(74, 179, 198);
+}
+
+#content p.change_link a:active {
+    position: relative;
+    top: 1px;
+}
+
+#content p.change_link,
+#content p.preface {
+	color : #194775;
+	width : 60%;
+	font-weight : bold;
+	font-size : 21px;
+}
+
+#advertisement {
+	background-color : #F9F9FA;
+	height : 90%;
+	width : 15%;
+	float : right;
+}
+
+#footer {
+	background-color : 	#E4E3E9;
+	height : 5%;
+	width : 100%;
+	clear : both;
+	text-align : center;
+}
+
+#footer span {
+	color : #003366;
+	font-weight : bold;
+}
+
+.gridStyle {
+    border: 1px solid rgb(212,212,212);
+    width: 80%;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.selectedItems{
+    float: left;
+}

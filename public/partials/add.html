@@ -1,0 +1,28 @@
+<form ng-submit="onSubmitClick()">
+	<div id="statusMsg"><alert ng-repeat="alert in alerts" type="{{alert.type}}" close="closeAlert($index)">{{alert.content}}</alert></div>
+    <table>
+        <thead>
+        <tr>
+            <td>Medicine Name</td>
+            <td>Rack</td>
+            <td>Quantity</td>
+        </tr>
+        </thead>
+        <tbody>
+
+        <tr ng-repeat="row in rowList">
+            <td><input pattern=".*[^ ].*" required autofocus type="text"  ng-model="row.name" placeholder="Please enter medicine name..."/></td>
+            <td><input pattern=".*[^ ].*" required type="text" ng-model="row.rack" placeholder="Please enter rack..."/></td>
+            <td><input pattern=".*[^ ].*" required type="number" min="0" ng-model="row.quant" placeholder="Please enter quantity..."/></td>
+
+        </tr>
+        <tr>
+            <td><button ng-click="onAddClick()">+</button></td>
+        </tr>
+        <tr>
+            <td align="right"><button type="submit">Submit</button></td>
+        </tr>
+        </tbody>
+
+    </table>
+</form>
