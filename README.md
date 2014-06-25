@@ -1,4 +1,4 @@
 medic-rack
 ==========
-Light weight medicine inventory
+Light weight medicine inventory.
 
